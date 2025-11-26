@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 750px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.left {
+  flex: 1;
+}
+
+.left_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 10px;
+}
+
+.right_title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.right_message {
+  font-size: 0.8rem;
+  color: hsl(217, 19%, 35%);
+}
+
+.right_user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.right_userAvatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.right_userName {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.right_userBirthdate {
+  font-size: 0.7rem;
+  color: hsl(217, 19%, 35%);
+}
+
+.share_btn {
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  padding: 3px 3px 4px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.share_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.share_btn:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.share_btn:active {
+  opacity: 0.8;
+}
+
+.share_btn:hover .share_img {
+  filter: brightness(0) invert(1);
+}
+
+.share_wrapper {
+  position: relative;
+}
+
+.share_popup {
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 40px;
+  right: -97px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 30px;
+  border-radius: 6px;
+}
+
+.share_popup::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
+}
+
+.share_popupText {
+  margin-right: 10px;
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.share_popup a {
+  width: 20px;
+  height: 20px;
+}
+
+.share_popup a img {
+  display: block;
+  width: 95%;
+  height: 95%;
+}
+
+.share_popup.active {
+  display: flex;
+}
+
+.attribution {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.7rem;
+}
