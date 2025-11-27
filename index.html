@@ -25,67 +25,74 @@
     />
   </head>
   <body>
-    <div class="flex-container">
-      <div class="left">
-        <img src="./images/drawers.jpg" alt="drawers" class="left_img" />
+    <div class="article-card">
+      <!--* LEFT SIDE  -->
+      <div class="article-card__image">
+        <img
+          src="./images/drawers.jpg"
+          alt="drawers"
+          class="article-card__image-img"
+        />
       </div>
-      <div class="right">
-        <p class="right_title">
+
+      <!--* RIGHT SIDE -->
+      <div class="article-card__content">
+        <p class="article-card__title">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </p>
 
-        <p class="right_message">
+        <p class="article-card__text">
           Ever been in a room and felt like something was missing? Perhaps it
           felt slightly bare and uninviting. I&apos;ve got some simple tips to
           help you make any room feel complete.
         </p>
 
-        <div class="right_user">
-          <div class="user">
+        <div class="article-card__user">
+          <div class="article-card__user-info">
             <img
               src="./images/avatar-michelle.jpg"
               alt="michelle avatar"
-              class="right_userAvatar"
+              class="article-card__user-avatar"
             />
 
             <span>
-              <p class="right_userName">Michelle Appleton</p>
+              <p class="article-card__user-name">Michelle Appleton</p>
 
-              <p class="right_userBirthdate">28 Jun 2020</p>
+              <p class="article-card__user-date">28 Jun 2020</p>
             </span>
           </div>
 
-          <div class="share_wrapper">
-            <button class="share_btn" id="share_btn">
+          <div class="article-card__share">
+            <button class="article-card__share-btn" id="share_btn">
               <img
                 src="./images/icon-share.svg"
                 alt="share btn"
-                class="share_img"
+                class="article-card__share-icon"
               />
             </button>
 
-            <div class="share_popup" id="share_popup">
-              <p class="share_popupText">share</p>
+            <div class="article-card__share-popup" id="share_popup">
+              <p class="article-card__share-label">share</p>
               <a href="#">
                 <img
                   src="./images/icon-facebook.svg"
                   alt="facebook icon"
-                  class="share_fbIcon"
+                  class="article-card__share-facebook"
                 />
               </a>
               <a href="#">
                 <img
                   src="./images/icon-twitter.svg"
                   alt="twitter icon"
-                  class="share_twitterIcon"
+                  class="article-card__share-twitter"
                 />
               </a>
               <a href="#">
                 <img
                   src="./images/icon-pinterest.svg"
                   alt="pinterest icon"
-                  class="share_pinterestIcon"
+                  class="article-card__share-pinterest"
                 />
               </a>
             </div>
